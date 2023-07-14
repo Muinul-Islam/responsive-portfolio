@@ -195,3 +195,34 @@ footer{
     border: 0px;
     width: 100%;
 }
+
+/* Responsive Styles */
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    .skills-container, .resume-container, .footer, .about-info-container, .banner, nav , nav>ul{
+        flex-direction: column;
+    }
+    nav>ul{
+        gap: 10px;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    #what-i-do, .banner{
+        padding: 20px;
+    }
+    .footer, .about{
+        padding: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],.contact input[type="email"], textarea{
+        width: 80%;
+    }
+}
